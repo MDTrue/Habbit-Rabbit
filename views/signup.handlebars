@@ -1,0 +1,51 @@
+<div class="containerSignUp">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="containerSignUp__heading">Sign Up Form</h2>
+      <form class="signup">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name-input" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age-input" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email-input" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password-input" placeholder="Password">
+        </div>
+          <label for="diet">Dietary Preference: </label>
+          <select class="containerSignUp__select" id="diet-input">
+            <option class="containerSignUp__select--heading" value="Omnivore">Select One</option>
+            <option class="containerSignUp__select--option" value="Gluten Free">Gluten Free</option>
+            <option class="containerSignUp__select--option" value="Omnivore">Omnivore</option>
+            <option class="containerSignUp__select--option" value="Vegan">Vegan</option>
+            <option class="containerSignUp__select--option" value="Vegetarian">Vegetarian</option>
+          </select>
+        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span> <span class="msg"></span>
+        </div>
+        <button type="submit" class="btn_signUp">Sign Up</button>
+        <p class="containerSignUp__message">Once you have already signed up you can log in here:</p>
+       <a href="/login" class="btn_logIn">Log In</a>
+      </form>
+      <br />
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="containerFooter">
+        <div class="containerFooter__copyright">
+            © Habbit Rabbit Enterprises
+        </div>
+        <div class = "containerFooter__logo">
+    <img class = "containerFooter__logo--img" src = "/assets/images/logo2_Rabbit_Transparent.png" alt = "Habit-Rabbit Logo">
+</div>
+    </div>
+</footer>

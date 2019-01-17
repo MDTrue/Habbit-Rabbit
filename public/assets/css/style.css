@@ -1,0 +1,716 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(-90deg, #646263, #8e8c81);
+  font-family: "Merriweather", serif; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+
+a {
+  color: white;
+  text-decoration: none;
+  outline: none; }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  outline: none; }
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  /* Applies to links under the pointer */
+  color: white;
+  text-decoration: none;
+  outline: none; }
+
+a:active {
+  /* Applies to activated links */
+  text-decoration: none;
+  outline: none; }
+
+#splashVideo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .splash__Logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 20%; }
+    @media only screen and (max-width: 56.25em) {
+      .splash__Logo {
+        position: absolute;
+        left: 50%;
+        top: 35%; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
+    .splash__Logo--img {
+      width: 800px; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
+    .splash__Logo--img {
+      width: 600px; } }
+  .splash__Button {
+    color: #fffbe8;
+    transform: translate(-50%, -50%); }
+    .splash__Button--button {
+      position: relative;
+      right: 9em;
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      border: solid 2px #907b4c;
+      border-radius: 9em 0em 12em 12em;
+      color: #fffbe8;
+      background-color: #907b4c;
+      padding: 8em 7em;
+      margin: 4em; }
+    .splash__Button--button:active {
+      transform: translateY(1px);
+      filter: saturate(150%); }
+    .splash__Button--button:hover {
+      color: #907b4c;
+      background-color: #5a7670;
+      border: solid 2px #907b4c; }
+    .splash__Button--text {
+      text-decoration: none;
+      outline: none;
+      font-size: 5em;
+      color: #907b4c; }
+    .splash__Button--text:link {
+      text-decoration: none;
+      outline: none;
+      font-size: 5em;
+      color: #907b4c; }
+
+#habit {
+  color: #907b4c; }
+
+#slider {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); }
+  55% {
+    transform: translateY(-8%); }
+  65% {
+    transform: translateY(4%); }
+  78% {
+    transform: translateY(-4%); }
+  95% {
+    transform: translateY(2%); }
+  100% {
+    transform: translateY(0%); } }
+
+.containerSignUp {
+  font-family: 'Bitter', serif; }
+  .containerSignUp__heading {
+    text-align: center;
+    font-size: 5em;
+    color: #ede6e7; }
+  .containerSignUp__message {
+    font-size: 3em;
+    color: #ede6e7; }
+  .containerSignUp__select {
+    text-align: center;
+    font-size: 3em;
+    border-radius: 2em;
+    text-decoration: none;
+    outline: none;
+    border: solid 2px #907b4c;
+    color: #907b4c;
+    background-color: #fffbe8;
+    padding: .8em .8em;
+    margin: 1.5em; }
+    .containerSignUp__select--heading {
+      text-decoration: none;
+      outline: none; }
+    .containerSignUp__select--option {
+      text-decoration: none;
+      outline: none; }
+  .containerSignUp__select:active {
+    text-decoration: none;
+    outline: none; }
+  .containerSignUp__select:hover {
+    color: #fffbe8;
+    background-color: #907b4c;
+    text-decoration: none;
+    outline: none; }
+
+label {
+  font-size: 3em;
+  color: #ede6e7; }
+
+.btn_signUp {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px transparent;
+  border-radius: 2em;
+  font-family: 'Bitter', serif;
+  font-size: 3em;
+  color: #fffbe8;
+  background-color: #907b4c;
+  padding: 1em 4em;
+  margin: 1em; }
+
+.btn_signUp:hover {
+  text-decoration: none;
+  outline: none;
+  color: #907b4c;
+  background-color: #fffbe8;
+  border: solid 2px #907b4c; }
+
+.btn_logIn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: solid 2px transparent;
+  border-radius: 2em;
+  font-family: 'Bitter', serif;
+  font-size: 3em;
+  color: #fffbe8;
+  background-color: #907b4c;
+  padding: 1em 4.5em;
+  margin: 1em; }
+
+.btn_logIn:hover {
+  color: #907b4c;
+  background-color: #fffbe8;
+  border: solid 2px #907b4c; }
+
+.form-control {
+  background-image: radial-gradient(#fffbe8, #ede6e7);
+  color: #5a7670;
+  font-size: 1.5em;
+  font-family: "Arima Madurai", cursive;
+  text-decoration: none;
+  outline: none;
+  border-radius: 2em; }
+
+.containerLogIn__heading {
+  text-align: center;
+  font-size: 4em;
+  color: #ede6e7; }
+
+.containerLogIn__message {
+  font-size: 2em;
+  color: #ede6e7; }
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.bg-img {
+  width: 100vw; }
+
+.hero-area {
+  position: relative;
+  z-index: 1;
+  margin-left: 4%;
+  margin-right: 4%; }
+
+.hero-slides {
+  position: relative;
+  z-index: 1; }
+
+.hero-slides .single-hero-slide {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 820px;
+  position: relative;
+  z-index: 1; }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-slides .single-hero-slide {
+    height: 650px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-slides .single-hero-slide {
+    height: 650px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-slides .single-hero-slide {
+    height: 650px; } }
+
+.hero-slides .single-hero-slide .hero-slides-content {
+  position: relative;
+  margin-top: 150px;
+  z-index: 1;
+  padding: 60px 50px;
+  background-color: rgba(24, 24, 24, 0.54); }
+
+@media only screen and (max-width: 767px) {
+  .hero-slides .single-hero-slide .hero-slides-content {
+    padding: 30px 20px; } }
+
+.hero-slides .single-hero-slide .hero-slides-content h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600; }
+
+@media only screen and (max-width: 767px) {
+  .hero-slides .single-hero-slide .hero-slides-content h2 {
+    font-size: 24px; } }
+
+.hero-slides .single-hero-slide .hero-slides-content p {
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: #ffffff; }
+
+.hero-slides .owl-prev,
+.hero-slides .owl-next {
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  top: 50%;
+  margin-top: -20px;
+  left: 4%;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  border-bottom: 3px solid #1c8314; }
+
+@media only screen and (max-width: 767px) {
+  .hero-slides .owl-prev,
+  .hero-slides .owl-next {
+    font-size: 30px; } }
+
+.hero-slides .owl-next {
+  left: auto;
+  right: 4%; }
+
+.hero-slides:hover .owl-prev, .hero-slides:hover .owl-next {
+  opacity: 1;
+  visibility: visible; }
+
+.hero-slides .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  z-index: 10;
+  width: 80%;
+  left: 17%; }
+
+.hero-slides .owl-dots .owl-dot {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 10px; }
+
+.hero-slides .owl-dots .owl-dot.active {
+  color: #1c8314; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
+  .breakpoint-on .classynav ul li.megamenu-item > a::after {
+    top: 10px; } }
+
+@media only screen and (max-width: 767px) {
+  .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
+  .breakpoint-on .classynav ul li.megamenu-item > a::after {
+    top: 10px; } }
+
+.delicious-btn {
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 58px;
+  font-weight: 600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background-color: #907b4c; }
+
+.delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #646263;
+  border-color: #40ba37; }
+
+span {
+  color: white;
+  font-size: 7em;
+  text-decoration: none;
+  outline: none; }
+
+.recipeName {
+  font-family: "Arima Madurai", cursive;
+  color: #3fb0ac; }
+
+.recipe_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.favorite_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.recipe_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.modal-header {
+  font-size: 4em;
+  color: #5a7670;
+  background-image: radial-gradient(#fffbe8, #ede6e7); }
+
+.modal-body {
+  font-size: 2.5em;
+  font-family: "Arima Madurai", cursive;
+  color: #ede6e7;
+  background-image: linear-gradient(-90deg, #646263, #8e8c81); }
+
+.modal-footer {
+  font-size: 2.5em;
+  color: #fffbe8;
+  background-color: #2d2930; }
+
+.modal-dialog {
+  background-image: linear-gradient(-90deg, #646263, #8e8c81); }
+
+.modal_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 1.5em;
+  background-color: #5a7670;
+  color: #ede6e7;
+  padding: .5em; }
+
+.containerModal__logo--img {
+  height: 5em; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 3em;
+  font-family: "Alegreya Sans", sans-serif; }
+  .home__Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center; }
+    .home__Container--button1 {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50%;
+      color: #8e8c81;
+      background-color: #ede6e7;
+      padding: 1em;
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+      border-color: #8e8c81;
+      border-radius: 1em 1em 0em 0em; }
+    .home__Container--button1:hover {
+      color: #fffbe8;
+      background-color: #5a7670; }
+    .home__Container--button2 {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50%;
+      color: #8e8c81;
+      background-color: #ede6e7;
+      padding: 1em;
+      border-width: 1px 0px 1px 0px;
+      border-style: solid;
+      border-color: #8e8c81; }
+    .home__Container--button2:hover {
+      color: #fffbe8;
+      background-color: #5a7670; }
+    .home__Container--button3 {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50%;
+      color: #8e8c81;
+      background-color: #ede6e7;
+      padding: 1em;
+      border-width: 1px 0px 1px 0px;
+      border-style: solid;
+      border-color: #8e8c81; }
+    .home__Container--button3:hover {
+      color: #fffbe8;
+      background-color: #5a7670; }
+    .home__Container--button4 {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50%;
+      color: #8e8c81;
+      background-color: #ede6e7;
+      padding: 1em;
+      border-width: 1px 0px 0px 0px;
+      border-style: solid;
+      border-color: #8e8c81;
+      border-radius: 0em 0em 1em 1em; }
+    .home__Container--button4:hover {
+      color: #fffbe8;
+      background-color: #5a7670; }
+
+.member-name {
+  font-size: inherit;
+  color: inherit; }
+
+.member-age {
+  font-size: inherit;
+  color: inherit; }
+
+.member-diet {
+  font-size: inherit;
+  color: inherit; }
+
+.member-email {
+  font-size: inherit;
+  color: inherit; }
+
+.profile__container--heading {
+  font-size: 3.5em;
+  color: #ede6e7;
+  font-family: "Arima Madurai", cursive; }
+
+.profile__container--list {
+  font-size: 2em;
+  color: #fffbe8;
+  font-family: "Alegreya Sans", sans-serif; }
+
+.activity_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.activity_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Description {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 4em; }
+
+.containerFooter {
+  font-size: 2em;
+  width: 100%;
+  height: 2em;
+  color: #fffbe8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .containerFooter__copyright {
+    padding: 6em 1em;
+    align-content: center; }
+  .containerFooter__logo {
+    width: 225px; }
+    .containerFooter__logo--img {
+      width: 100%;
+      height: auto; }
+
+.navbar__Container {
+  width: 100%; }
+  .navbar__Container--header {
+    width: 100%;
+    height: 5em;
+    border-bottom: 2px solid #8e8c81;
+    background-image: linear-gradient(-90deg, #8e8c81, #646263);
+    padding: 1em 0em 1em 0em;
+    overflow: hidden;
+    position: fixed;
+    top: 0; }
+  .navbar__Container--link1 {
+    font-size: 2em;
+    padding: .6em 1em .6em 1em;
+    background-color: #ede6e7;
+    color: #8e8c81;
+    border-right: 1px solid #8e8c81; }
+  .navbar__Container--link1:hover {
+    color: #ede6e7;
+    background-color: #5a7670; }
+  .navbar__Container--link3 {
+    font-size: 2em;
+    padding: .6em 1em .6em 1em;
+    background-color: #ede6e7;
+    color: #8e8c81;
+    border-right: 1px solid #8e8c81; }
+  .navbar__Container--link3:hover {
+    color: #ede6e7;
+    background-color: #5a7670; }
+  .navbar__Container--link2 {
+    font-size: 2em;
+    padding: .6em 1em .6em 1em;
+    background-color: #ede6e7;
+    color: #8e8c81;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-right: 1px solid #8e8c81; }
+  .navbar__Container--link2:hover {
+    color: #ede6e7;
+    background-color: #5a7670; }
+  .navbar__Container--main {
+    padding-top: 5em;
+    width: 100%;
+    height: 20em;
+    background-image: radial-gradient(#493e27, #2d2930);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .navbar__Container--img {
+    height: 20em; }
+  .navbar__Container--welcome {
+    color: #fffbe8;
+    padding-left: 1em;
+    font-size: 2em; }
+  .navbar__Container--quote {
+    color: #5a7670;
+    font-family: "Arima Madurai", cursive;
+    padding-right: 1em; }

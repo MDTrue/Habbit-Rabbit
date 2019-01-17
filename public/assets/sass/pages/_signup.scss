@@ -1,0 +1,105 @@
+.containerSignUp{
+
+    font-family: 'Bitter', serif;
+    &__heading{
+        text-align: center;
+        font-size: 5em;
+        color: $color-tertiary;
+    }
+    &__message{
+        font-size: 3em;
+        color: $color-tertiary;
+
+    }
+    &__select{
+        text-align: center;
+        font-size: 3em;
+        border-radius: 2em;
+        text-decoration: none;
+        outline: none; 
+        border: solid 2px $color-secondary;
+        color: $color-secondary;
+        background-color: $color-primary-light;
+        padding: .8em .8em;
+        margin: 1.5em;
+        &--heading{
+            text-decoration: none;
+            outline: none; 
+        }
+        &--option{
+            text-decoration: none;
+           
+            outline: none; 
+        }
+    }
+    &__select:active{
+        text-decoration: none; 
+        outline: none; 
+    }
+    &__select:hover{
+        color: $color-primary-light;
+        background-color: $color-secondary;
+        text-decoration: none; 
+        outline: none; 
+    }
+    }
+
+label{
+    font-size: 3em;
+    color: $color-tertiary;
+}
+.btn_signUp{
+    @include button-reset;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border: solid 2px transparent;
+            border-radius: 2em;
+            font-family: 'Bitter', serif;
+            font-size: 3em;
+            color: $color-primary-light;
+            background-color: $color-secondary;
+            padding: 1em 4em ;
+            margin: 1em;
+}
+
+.btn_signUp:hover{
+    text-decoration: none; 
+    outline: none; 
+    color: $color-secondary;
+    background-color: $color-primary-light;
+    border: solid 2px $color-secondary;
+}
+.btn_logIn{
+    @include button-reset;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border: solid 2px transparent;
+            border-radius: 2em;
+            font-family: 'Bitter', serif;
+            font-size: 3em;
+            color: $color-primary-light;
+            background-color: $color-secondary;
+            padding: 1em 4.5em ;
+            margin: 1em;
+}
+
+.btn_logIn:hover{
+    color: $color-secondary;
+    background-color: $color-primary-light;
+    border: solid 2px $color-secondary;
+}
+.form-control{
+    // background-color: $color-primary-light;
+    background-image: radial-gradient($color-primary-light,$color-tertiary);
+    color: $color-secondary-dark;
+    font-size: 1.5em;
+    font-family: $font-cursive;
+    text-decoration: none; 
+    outline: none; 
+    border-radius: 2em;
+}
+
+

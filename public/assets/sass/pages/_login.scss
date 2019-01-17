@@ -1,0 +1,13 @@
+.containerLogIn{
+    &__heading{
+        text-align: center;
+        font-size: 4em;
+        color: $color-tertiary;
+    }
+    &__message{
+        font-size: 2em;
+        color: $color-tertiary;
+
+    }
+
+}

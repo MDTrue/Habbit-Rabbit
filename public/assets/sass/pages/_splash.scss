@@ -1,0 +1,134 @@
+#splashVideo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+.splash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    @include responsive(t-port) { 
+    
+    
+      }
+    &__Logo{
+        @include center-element;
+        position: absolute;
+            left: 50%;
+            top: 20%;
+         @include responsive(t-port) { 
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            // width: 400px;
+
+
+            &--img{
+                @include responsive(t-port) { 
+                    width: 800px;
+                }
+                @include responsive(phone) { 
+                    width: 600px;
+                }
+
+            }
+          }
+     
+
+    }
+    &__Button{
+        
+        color: $color-primary-light;
+        transform: translate(-50%, -50%);
+        &--button{
+            position: relative;
+            right: 9em;
+            @include button-reset;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border: solid 2px $color-secondary;
+            border-radius: 9em 0em 12em 12em;
+            
+            // font-size: 4em;
+            color: $color-primary-light;
+            background-color: $color-secondary;
+            
+            
+            padding: 8em 7em ;
+            margin: 4em;
+            
+        }
+        &--button:active{
+           
+            transform: translateY(1px);
+            filter: saturate(150%);
+        }
+        &--button:hover{
+            color: $color-secondary;
+            background-color: $color-secondary-dark;
+            border: solid 2px $color-secondary;
+        }
+
+       &--text{
+        text-decoration: none;
+        outline: none;
+        font-size: 5em;
+        color: $color-secondary;
+       }
+       &--text:link{
+        text-decoration: none;
+        outline: none;
+        font-size: 5em;
+        color: $color-secondary;
+       }
+    }
+}
+
+#habit{
+    color: $color-secondary;
+}
+    
+    #slider{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        
+    }
+    .slideUp{
+        animation-name: slideUp;
+        -webkit-animation-name: slideUp;	
+    
+        animation-duration: 1.5s;	
+        -webkit-animation-duration: 1.5s;
+    
+        animation-timing-function: ease;	
+        -webkit-animation-timing-function: ease;
+    
+        visibility: visible !important;			
+    }
+    
+    @keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+        }
+        55%{
+            transform: translateY(-8%);
+        }
+        65%{
+            transform: translateY(4%);
+        }
+        78%{
+            transform: translateY(-4%);
+        }
+        95%{
+            transform: translateY(2%);
+        }			
+        100% {
+            transform: translateY(0%);
+        }	
+    }
